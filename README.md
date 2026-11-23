@@ -1,4 +1,6 @@
-# Omawrite
+# SigmaOS Omawrite
+
+> Forked from omacom/omawrite (MIT). See `SIGMAOS_FORK.md`.
 
 A dead-simple Markdown writing app built with Qt Quick and C++ that automatically follows system dark/light mode.
 
