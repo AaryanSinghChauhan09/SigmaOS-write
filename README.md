@@ -1,6 +1,6 @@
 # SigmaOS Omawrite
 
-> Forked from omacom/omawrite (MIT). See `SIGMAOS_FORK.md`.
+> Forked from SigmaOS/omawrite (MIT). See `SIGMAOS_FORK.md`.
 
 A dead-simple Markdown writing app built with Qt Quick and C++ that automatically follows system dark/light mode.
 
@@ -10,7 +10,7 @@ A dead-simple Markdown writing app built with Qt Quick and C++ that automaticall
 
 ## Install
 
-Install via the Omarchy Package Repository via the `omawrite` package. It's installed by default in new installations of Omarchy (from Quattro forward).
+Install via the SigmaOS Package Repository via the `omawrite` package. It's installed by default in new installations of SigmaOS (from Quattro forward).
 
 ## Command line
 
@@ -52,7 +52,7 @@ Omawrite at the size it is designed around; larger and smaller sizes scale from 
 `Ctrl+=`, `Ctrl+-`, and `Ctrl+scroll` set your own size on top of that, from 50% to
 300% in browser-sized steps. It is remembered for the next window you open.
 
-Omawrite speaks the language picked under Omarchy's Setup > Language and switches with it, without a restart. Right-to-left languages mirror the window. The translations live in `src/i18n/`, one JSON file per language keyed by the English text, and `src/i18n/en.json` lists every string to translate.
+Omawrite speaks the language picked under SigmaOS's Setup > Language and switches with it, without a restart. Right-to-left languages mirror the window. The translations live in `src/i18n/`, one JSON file per language keyed by the English text, and `src/i18n/en.json` lists every string to translate.
 
 ## Requirements
 
