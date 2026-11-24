@@ -1,6 +1,6 @@
 [component]
-name = "omawrite"
-id = "sigmaos-omawrite"
+name = "sigmaos-write"
+id = "sigmaos-write"
 kind = "component"
 license = "GPL-3.0-or-later"
 
