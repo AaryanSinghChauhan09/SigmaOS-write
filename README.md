@@ -77,3 +77,8 @@ require an active graphical session. To open a file with the local build:
 ```sh
 ./build/omawrite path/to/document.md
 ```
+## Documentation
+
+Wiki documentation is available in the SigmaOS Wiki Staging repository:
+
+- [SigmaOS Wiki Staging](https://github.com/AaryanSinghChauhan09/sigmaos-wiki-staging#SigmaOS-write) - Full Wiki documentation for all SigmaOS components
