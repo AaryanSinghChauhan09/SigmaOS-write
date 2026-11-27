@@ -1099,7 +1099,7 @@ QString Backend::tomlValue(const QString &text) {
 
 void Backend::loadOmarchyTheme() {
     const QString colorsPath = QDir::homePath()
-        + QStringLiteral("/.local/state/omarchy/current/theme/colors.toml");
+        + QStringLiteral("/.local/state/sigmaos/current/theme/colors.toml");
     QString themeMode;
     QString background;
     QString foreground;
@@ -1218,7 +1218,7 @@ void Backend::watchOmarchyTheme() {
         m_themeWatcher.removePaths(watched);
 
     const QString currentDir = QDir::homePath()
-        + QStringLiteral("/.local/state/omarchy/current");
+        + QStringLiteral("/.local/state/sigmaos/current");
     const QString themeDir = currentDir + QStringLiteral("/theme");
     const QString colorsPath = themeDir + QStringLiteral("/colors.toml");
 

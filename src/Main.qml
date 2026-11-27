@@ -25,7 +25,7 @@ ApplicationWindow {
     // tooltips sit on.
     readonly property color panelColor: backend.themePanelBackground
     // The desktop's text size knob (GNOME's text-scaling-factor, which
-    // `omarchy display text size` drives) anchored so its 12px default leaves
+    // `sigmaos display text size` drives) anchored so its 12px default leaves
     // the app at the sizes it was designed around, times the user's own
     // text size set with Ctrl+= / Ctrl+- / Ctrl+wheel.
     readonly property real textScale: backend.textScale

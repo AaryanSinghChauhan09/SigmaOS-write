@@ -12,7 +12,7 @@
 
 Translator::Translator(const QString &languageFile, const QString &catalogDirectory, QObject *parent)
     : QTranslator(parent),
-      m_languageFile(languageFile.isEmpty() ? QDir::homePath() + "/.config/omarchy/language" : languageFile),
+      m_languageFile(languageFile.isEmpty() ? QDir::homePath() + "/.config/sigmaos/language" : languageFile),
       m_catalogDirectory(catalogDirectory) {
     m_debounce.setSingleShot(true);
     m_debounce.setInterval(80);
@@ -88,7 +88,7 @@ QString Translator::pluralCategory(const QString &language, long long count) {
 // app's numbers and dates match the desktop's (Arabic there uses Western
 // digits); without Omarchy, Qt's own locale for the code.
 QLocale Translator::formatLocale(const QString &language) {
-    QFile registry(qEnvironmentVariable("OMARCHY_PATH") + "/default/i18n/locales.json");
+    QFile registry(qEnvironmentVariable("SIGMAOS_PATH") + "/default/i18n/locales.json");
     if (registry.open(QIODevice::ReadOnly)) {
         const QString name = QJsonDocument::fromJson(registry.readAll()).object()
                                  .value(language).toObject().value("formatLocale").toString();
@@ -118,7 +118,7 @@ void Translator::reload() {
     if (!paths.isEmpty())
         m_watcher.removePaths(paths);
 
-    // omarchy-language replaces the file, which drops it from the watch, and a
+    // sigmaos-language replaces the file, which drops it from the watch, and a
     // first pick creates it, and maybe its directory; watch the nearest
     // existing directory too and re-arm every time.
     QString directory = QFileInfo(m_languageFile).absolutePath();
