@@ -46,7 +46,7 @@ is never auto-saved over its file — save it to keep it.
 The font button in the footer picks the writing font from any installed text font,
 and Omawrite remembers the choice. IBM Plex Mono is the default.
 
-Text follows the desktop text size — `omarchy display text size`, or GNOME's
+Text follows the desktop text size — `sigmaos display text size`, or GNOME's
 `text-scaling-factor` — and re-flows without a restart. The default of 12px leaves
 Omawrite at the size it is designed around; larger and smaller sizes scale from there.
 `Ctrl+=`, `Ctrl+-`, and `Ctrl+scroll` set your own size on top of that, from 50% to
